@@ -1,11 +1,11 @@
 ---
-import BaseHead from "../../components/BaseHead.astro";
-import Header from "../../components/Header.astro";
-import Footer from "../../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { getCollection } from "astro:content";
-import FormattedDate from "../../components/FormattedDate.astro";
-import FormattedTags from "../../components/FormattedTags.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+import FormattedTags from "../components/FormattedTags.astro";
 
 const posts = (await getCollection("blog")).sort(
     (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
@@ -21,23 +21,27 @@ posts.map((post) => {
     <head>
         <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     </head>
-    <body class="">
+    <body>
         <Header />
-        <div class="h-12"></div>
+        <div class="h-16"></div>
         <main class="max-w-[54rem] mx-auto">
             <section class="mx-3">
-                <ul>
+                <ul id="posts">
                     {
                         posts.map((post) => (
-                            <a href={`/blog/${post.slug}/`}>
-                                <li>
-                                    <div class="relative mx-auto mb-2">
+                            <a href={`/works/${post.slug}/`}>
+                                <li class="pt-14">
+                                    <div class="relative mx-auto ">
                                         <div class="absolute w-full h-full hover:opacity-90 opacity-0 bg-primary text-content-base flex items-center justify-center duration-100">
                                             <p class="mx-8 my-2 text-center">{post.data.description}</p>
                                         </div>
-                                        <img class="shadow-emphasis" src={post.data.heroImage} alt="" />
+                                        <img
+                                            class="shadow-emphasis object-cover aspect-video "
+                                            src={post.data.heroImage}
+                                            alt=""
+                                        />
                                     </div>
-                                    <div class="flex justify-between mx-1 mb-8 ">
+                                    <div class="flex justify-between mx-1 mt-2">
                                         <p class="hover:text-accent font-bold text-2xl text-left">
                                             {post.data.title}
                                         </p>

@@ -78,9 +78,7 @@ a:hover {
     color: #41aab8;
     transition-duration: 80ms;
 }
-p {
-    margin-bottom: 1em;
-}
+
 .prose p {
     margin-bottom: 2em;
 }

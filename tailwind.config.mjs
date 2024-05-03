@@ -5,7 +5,6 @@ export default {
     extend: {
       colors: {
         primary: "#e8e8e8", // Blue
-        "primary-transparent": "#e8e8e840",
         secondary: "#dadada", // Blue Grotto
         background: "#0C2D48", // Dark Blue
         accent: "#41aab8", // Aquamarine
