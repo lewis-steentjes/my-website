@@ -74,10 +74,13 @@ b {
     font-weight: 700;
 }
 
-a:hover {
+a {
+    color: #41aab8;
+}
+/* a:hover {
     color: #41aab8;
     transition-duration: 80ms;
-}
+} */
 
 .prose p {
     margin-bottom: 2em;

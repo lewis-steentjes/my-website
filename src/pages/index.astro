@@ -7,8 +7,8 @@ import { getCollection } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
 import FormattedTags from "../components/FormattedTags.astro";
 
-const posts = (await getCollection("blog")).sort(
-    (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
+const posts = (await getCollection("works")).sort(
+    (b, a) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
 );
 
 posts.map((post) => {
@@ -23,7 +23,7 @@ posts.map((post) => {
     </head>
     <body>
         <Header />
-        <div class="h-16"></div>
+        <div class="h-20"></div>
         <main class="max-w-[54rem] mx-auto">
             <section class="mx-3">
                 <h1 class="text-4xl font-bold mb-4">Hi</h1>
@@ -35,11 +35,12 @@ posts.map((post) => {
                 </p>
             </section>
             <section class="mx-3">
-                <ul id="posts">
+                <div class="h-14" id="posts"></div>
+                <ul>
                     {
                         posts.map((post) => (
-                            <a href={`/works/${post.slug}/`}>
-                                <li class="pt-14">
+                            <a href={`/works/${post.slug}/`} class="text-content-base hover:text-accent">
+                                <li class="mt-14">
                                     <div class="relative mx-auto ">
                                         <div class="absolute w-full h-full hover:opacity-90 opacity-0 bg-primary text-content-base flex items-center justify-center duration-100">
                                             <p class="mx-8 my-2 text-center">{post.data.description}</p>
