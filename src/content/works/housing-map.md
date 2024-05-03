@@ -14,4 +14,4 @@ Currently, the website is in the early stages of development. I am using NextJS 
 
 The website will allow users to filter listings based on their preferences, such as price range, number of bedrooms, and location. Users will also be able to view the location of each listing on a map, and view more details about each listing.
 
-You can check out the current deployment of the website [here](https://housing-map.vercel.app/).
+You can check out the current deployment of the website [here](https://trademe-housing.vercel.app/).
