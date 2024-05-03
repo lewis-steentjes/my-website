@@ -8,7 +8,7 @@ export default {
         "primary-transparent": "#e8e8e840",
         secondary: "#dadada", // Blue Grotto
         background: "#0C2D48", // Dark Blue
-        "accent-1": "#40B0DF", // Aquamarine
+        accent: "#41aab8", // Aquamarine
         "accent-2": "#FFD53D", // Yellow
         "content-base": "#0f110f",
         "content-muted": "#676767",

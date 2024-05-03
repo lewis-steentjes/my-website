@@ -1,0 +1,18 @@
+---
+interface Props {
+    tags: String[];
+}
+
+const { tags } = Astro.props;
+---
+
+<p className="text-right">
+    {
+        tags.map((tag, index) => {
+            if (index == tags.length - 1) {
+                return tag;
+            }
+            return tag + ", ";
+        })
+    }
+</p>
