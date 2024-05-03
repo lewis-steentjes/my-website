@@ -11,9 +11,9 @@ const posts = (await getCollection("works")).sort(
     (b, a) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
 );
 
-posts.map((post) => {
-    console.log(post.data.tags);
-});
+// posts.map((post) => {
+//     console.log(post.data.tags);
+// });
 ---
 
 <!doctype html>
@@ -56,6 +56,7 @@ posts.map((post) => {
                                         <p class="hover:text-accent font-bold text-2xl text-left mb-0">
                                             {post.data.title}
                                         </p>
+
                                         <FormattedTags tags={post.data.tags} />
                                     </div>
                                 </li>

@@ -10,10 +10,6 @@ import FormattedTags from "../components/FormattedTags.astro";
 const posts = (await getCollection("works")).sort(
     (b, a) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
 );
-
-posts.map((post) => {
-    console.log(post.data.tags);
-});
 ---
 
 <!doctype html>
