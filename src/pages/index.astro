@@ -6,6 +6,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { getCollection } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
 import FormattedTags from "../components/FormattedTags.astro";
+import SocialLinks from "../components/SocialLinks.astro";
 
 const posts = (await getCollection("works")).sort(
     (b, a) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
@@ -34,17 +35,17 @@ const posts = (await getCollection("works")).sort(
         <div class="h-20"></div>
         <main class="max-w-[54rem] mx-auto">
             <section class="mx-3">
-                <h1 class="text-4xl font-bold mb-4">Hi</h1>
-                <p>
+                <h1 class="text-4xl font-bold mb-4">Welcome</h1>
+                <p class="mb-6">
                     I'm a software engineer and I build products with human-centric design. I write about
                     software engineering, productivity, and personal growth. I'm currently building out my
-                    portfolio while looking for full-time employment. If you're interested in working
-                    together, feel free to reach out.
+                    portfolio while looking for a fast-paced role in an environment where I can continue to
+                    develop my skills. If you're interested in working together, feel free to reach out.
                 </p>
-                <p>~~~Links go here~~~</p>
+                <SocialLinks />
             </section>
             <section class="mx-3">
-                <div class="h-14" id="posts"></div>
+                <div class="h-10" id="posts"></div>
                 <ul id="postLinks">
                     {
                         posts.map((post) => (

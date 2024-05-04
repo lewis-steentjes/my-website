@@ -1,10 +1,18 @@
-<div class="social-links">
+---
+import { Icon } from "astro-icon/components";
+---
+
+<div class="social-links flex flex-row gap-4">
+    <a href="mailto:contact@lewissteentjes.com">
+        <span class="sr-only text-content-base">Send me an email</span>
+        <Icon name="bi:envelope" width="32" height="32" />
+    </a>
     <a href="https://linkedin.com/in/lewis-steentjes/" class="" target="_blank">
-        <span class="sr-only">Connect With Me on LinkedIn</span>
+        <span class="sr-only text-content-base">Connect With Me on LinkedIn</span>
         <Icon name="bi:linkedin" width="32" height="32" />
     </a>
     <a href="https://github.com/lewis-steentjes" target="_blank">
-        <span class="sr-only">Go to my GitHub repo</span>
+        <span class="sr-only text-content-base">Go to my GitHub repo</span>
         <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/github"
             ><path
                 fill="currentColor"
@@ -13,7 +21,7 @@
         >
     </a>
     <a href="https://instagram.com/lewissteentjes" target="_blank">
-        <span class="sr-only">Connect With Me on LinkedIn</span>
+        <span class="sr-only text-content-base">Check out my Instagram</span>
         <Icon name="bi:instagram" width="32" height="32" />
     </a>
 </div>
