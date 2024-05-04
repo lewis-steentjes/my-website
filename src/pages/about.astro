@@ -19,17 +19,17 @@ const posts = (await getCollection("works")).sort(
     </head>
     <body>
         <Header />
-        <main class="max-w-[54rem] mx-auto min-h-screen">
-            <section class="mx-3">
-                <h1 class="text-4xl font-bold mb-4 mt-16">Hi</h1>
-                <p>
-                    I'm a software engineer and I build products with human-centric design. I write about
-                    software engineering, productivity, and personal growth. I'm currently building out my
-                    portfolio while looking for full-time employment. If you're interested in working
-                    together, feel free to reach out.
-                </p>
-            </section>
+        <main class="max-w-[54rem] mx-auto min-h-screen flex flex-col justify-center">
+            <div class="flex flex-row">
+                <img src="/images/mountain.jpg" alt="Mountain" class="w-1/2 shadow-emphasis" />
+
+                <section class="mx-3">
+                    <h1 class="text-4xl font-bold mb-4 mt-16">About</h1>
+                    <p>Write up a story here. <br />Maybe add a filter/styling to the picture.</p>
+                </section>
+            </div>
         </main>
+
         <Footer />
     </body>
 </html>
