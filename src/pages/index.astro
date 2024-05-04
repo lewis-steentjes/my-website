@@ -14,10 +14,10 @@ const posts = (await getCollection("works")).sort(
 
 <script>
     // Enable hover effect on touch devices through tap gestures
-    const postLinks = document.getElementById("hoverEffect");
-    postLinks.addEventListener("touchstart", (event) => {
+    // When hovered by a computer, the opacity is automatically set to 0.9 and the link is clickable
+    const postLinks = document.getElementById("postLinks");
+    postLinks.addEventListener("click", (event) => {
         const currOpacity = window.getComputedStyle(event.target).getPropertyValue("opacity");
-        console.log(currOpacity);
         if (currOpacity != 0.9) {
             event.preventDefault();
             event.target.style.opacity = "0.9";
@@ -45,16 +45,16 @@ const posts = (await getCollection("works")).sort(
             </section>
             <section class="mx-3">
                 <div class="h-14" id="posts"></div>
-                <ul>
+                <ul id="postLinks">
                     {
                         posts.map((post) => (
-                            <a href={`/works/${post.slug}/`} class="text-content-base hover:text-accent">
+                            <a
+                                href={`/works/${post.slug}/`}
+                                class="text-content-base hover:text-accent duration-75"
+                            >
                                 <li class="mt-14">
                                     <div class="relative mx-auto ">
-                                        <div
-                                            id="hoverEffect"
-                                            class="absolute w-full h-full hover:opacity-90 opacity-0 bg-primary text-content-base flex items-center justify-center duration-100"
-                                        >
+                                        <div class="absolute w-full h-full hover:opacity-90 opacity-0 bg-primary text-content-base flex items-center justify-center duration-100">
                                             <p class="mx-8 my-2 text-center">{post.data.description}</p>
                                         </div>
                                         <img
