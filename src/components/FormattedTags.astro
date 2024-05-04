@@ -6,7 +6,7 @@ interface Props {
 const { tags } = Astro.props;
 ---
 
-<p class="text-md mb-0">
+<p class="text-md mb-0 text-right">
     {
         tags.map((tag, index) => {
             if (index == tags.length - 1) {
