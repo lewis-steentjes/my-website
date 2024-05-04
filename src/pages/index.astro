@@ -64,9 +64,9 @@ const posts = (await getCollection("works")).sort(
                                         />
                                     </div>
                                     <div class="flex justify-between mx-1 mt-2">
-                                        <p class="hover:text-accent font-bold text-2xl text-left mb-0">
+                                        <h2 class="font-bold text-2xl text-left mb-0 text-inherit">
                                             {post.data.title}
-                                        </p>
+                                        </h2>
 
                                         <FormattedTags tags={post.data.tags} />
                                     </div>
