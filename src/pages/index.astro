@@ -10,13 +10,21 @@ import FormattedTags from "../components/FormattedTags.astro";
 const posts = (await getCollection("works")).sort(
     (b, a) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
 );
-
-// posts.map((post) => {
-//     console.log(post.data.tags);
-// });
 ---
 
-<!doctype html>
+<script>
+    // Enable hover effect on touch devices through tap gestures
+    const postLinks = document.getElementById("hoverEffect");
+    postLinks.addEventListener("touchstart", (event) => {
+        const currOpacity = window.getComputedStyle(event.target).getPropertyValue("opacity");
+        console.log(currOpacity);
+        if (currOpacity != 0.9) {
+            event.preventDefault();
+            event.target.style.opacity = "0.9";
+        }
+    });
+</script>
+
 <html lang="en">
     <head>
         <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
@@ -43,7 +51,10 @@ const posts = (await getCollection("works")).sort(
                             <a href={`/works/${post.slug}/`} class="text-content-base hover:text-accent">
                                 <li class="mt-14">
                                     <div class="relative mx-auto ">
-                                        <div class="absolute w-full h-full hover:opacity-90 opacity-0 bg-primary text-content-base flex items-center justify-center duration-100">
+                                        <div
+                                            id="hoverEffect"
+                                            class="absolute w-full h-full hover:opacity-90 opacity-0 bg-primary text-content-base flex items-center justify-center duration-100"
+                                        >
                                             <p class="mx-8 my-2 text-center">{post.data.description}</p>
                                         </div>
                                         <img
