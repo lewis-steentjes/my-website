@@ -7,6 +7,7 @@ import { getCollection } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
 import FormattedTags from "../components/FormattedTags.astro";
 import SocialLinks from "../components/SocialLinks.astro";
+import PostDescription from "../components/PostDescription.astro";
 
 const posts = (await getCollection("works")).sort(
     (b, a) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
@@ -38,7 +39,7 @@ const posts = (await getCollection("works")).sort(
                 <h1 class="text-4xl font-bold mb-4">Welcome</h1>
                 <p class="mb-6">
                     I am a software engineer that builds products with human-centric design. I write about
-                    software engineering, productivity, and personal growth. I'm currently building out my
+                    software engineering, productivity, and personal growth. Currently, I'm building out my
                     portfolio while looking for a fast-paced role in an environment where I can continue to
                     develop my skills. If you're interested in working together, feel free to reach out.
                 </p>
@@ -56,7 +57,7 @@ const posts = (await getCollection("works")).sort(
                                 <li class="mt-14">
                                     <div class="relative mx-auto ">
                                         <div class="absolute w-full h-full hover:opacity-90 opacity-0 bg-primary text-content-base flex items-center justify-center duration-100">
-                                            <p class="mx-8 my-2 text-center">{post.data.description}</p>
+                                            <PostDescription description={post.data.description} />
                                         </div>
                                         <img
                                             class="shadow-emphasis object-cover aspect-video "
@@ -79,5 +80,16 @@ const posts = (await getCollection("works")).sort(
             </section>
         </main>
         <Footer />
+        <style>
+            ul {
+                list-style-type: "";
+                margin-top: 0rem;
+                margin-bottom: 0rem;
+            }
+            li {
+                margin-left: 0rem;
+                margin-bottom: 0rem;
+            }
+        </style>
     </body>
 </html>

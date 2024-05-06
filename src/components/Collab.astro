@@ -1,0 +1,34 @@
+---
+const { people } = Astro.props;
+interface Props {
+    people: Attribution[];
+}
+interface Attribution {
+    name: string;
+    gitHubURL: string;
+}
+---
+
+<aside class="flex flex-row justify-center mb-4">
+    <span class="text-content-muted mr-6">Contributors:</span>
+    {
+        people.map((person) => {
+            return (
+                <a href={person.gitHubURL}>
+                    <button
+                        class="
+        bg-secondary
+        rounded-md
+        px-4
+        mx-0.5
+        text-content-base
+        hover:text-accent"
+                    >
+                        {" "}
+                        {person.name}
+                    </button>
+                </a>
+            );
+        })
+    }
+</aside>

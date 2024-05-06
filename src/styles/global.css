@@ -97,7 +97,15 @@ input {
 table {
     width: 100%;
 }
-
+ul {
+    list-style-type: "- ";
+    margin-top: -0.75rem;
+    margin-bottom: 1rem;
+}
+li {
+    margin-left: 2rem;
+    margin-bottom: 0.25rem;
+}
 code {
     padding: 2px 5px;
     background-color: rgb(var(--gray-light));

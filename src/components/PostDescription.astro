@@ -1,0 +1,25 @@
+---
+interface Props {
+    description: string;
+}
+const { description } = Astro.props;
+
+function interpretBold(text: string) {
+    // A function that takes a string and returns a string with bold tags around words with "**" around them
+    // Built in Astro
+
+    return text.split("**");
+}
+---
+
+<p class="mx-8 my-2 text-center">
+    {
+        description.split("**").map((part, index) => {
+            if (index % 2 === 0) {
+                return part;
+            } else {
+                return <span class="font-semibold">{part}</span>;
+            }
+        })
+    }
+</p>
