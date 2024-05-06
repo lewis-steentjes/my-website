@@ -33,7 +33,11 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
                 <div>
                     {
                         heroImage && (
-                            <img src={heroImage} alt="" class="object-cover shadow-emphasis aspect-video" />
+                            <img
+                                src={heroImage}
+                                alt={`Preview image for ${title}`}
+                                class="object-cover shadow-emphasis aspect-video"
+                            />
                         )
                     }
                 </div>
@@ -52,7 +56,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
                                 )
                             }
                         </div>
-                        <h1 class="text-center mt-1 mb-3">{title}</h1>
+                        <h1 class="text-center text-balance mt-1 mb-3">{title}</h1>
                         <hr />
                     </div>
                     <slot />

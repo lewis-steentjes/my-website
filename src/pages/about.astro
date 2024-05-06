@@ -6,6 +6,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { getCollection } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
 import FormattedTags from "../components/FormattedTags.astro";
+import { Image } from "astro:assets";
+import mountain from "../assets/images/about/mountain.jpg";
 
 const posts = (await getCollection("works")).sort(
     (b, a) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
@@ -19,13 +21,27 @@ const posts = (await getCollection("works")).sort(
     </head>
     <body>
         <Header />
-        <main class="max-w-[54rem] mx-auto min-h-screen flex flex-col justify-center">
-            <div class="flex flex-row">
-                <img src="/images/mountain.jpg" alt="Mountain" class="w-1/2 shadow-emphasis" />
-
+        <main class="max-w-[60rem] mx-auto min-h-screen flex flex-col justify-center">
+            <div class="flex flex-row justify-around">
+                <Image src={mountain} alt="Mountain" class="w-2/5 shadow-emphasis object-cover ml-2 mr-2" />
                 <section class="mx-3">
                     <h1 class="text-4xl font-bold mb-4 mt-16">About</h1>
-                    <p>Write up a story here. <br />Maybe add a filter/styling to the picture.</p>
+                    <p>
+                        After spending a few years working in electronics production and metrology, I found
+                        myself gaining an interest in software development. My background in electrical
+                        engineering provided a solid foundation in programming concepts, and I was eager to
+                        explore higher-level languages.
+                    </p><p>
+                        To deepen my understanding of web development, I enrolled in Dev Academy Aotearoa's
+                        intensive 15-week web development bootcamp. This immersive program gave me a
+                        comprehensive introduction to the field.
+                    </p><p>
+                        I gained a more solidified understanding of front-end frameworks like React, back-end
+                        technologies like Node.js, and databases like PostgreSQL.
+                    </p><p>
+                        Since completing the bootcamp, I've focused on building a portfolio of projects that
+                        showcase my skills. You can explore my work back over <a href="/#posts/">here</a>.
+                    </p>
                 </section>
             </div>
         </main>

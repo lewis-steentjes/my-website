@@ -1,13 +1,17 @@
 ---
-title: "Foundations Blog"
-description: "A blog used to learn HTML/CSS/JS basics during the foundational weeks ofthe Web Development bootcamp at the Dev Academy Aotearoa."
+title: "The Beginning: Foundations Blog"
+description: "Follow my coding journey from the start! This blog documents my web development foundations, covering **HTML**, **CSS**, and **JavaScript** basics."
 pubDate: "February 10 2024"
 tags: ["GitHub Pages", "JavaScript", "CSS", "HTML"]
 heroImage: "/images/foundations-blog-3.png"
 ---
 
-This is the blog I created during the foundational weeks of the Web Development bootcamp at the Dev Academy Aotearoa. The purpose of this blog was to learn the basics of HTML, CSS, and JavaScript, and to document my progress as I learned. I used GitHub Pages to host the blog, and I used a combination of HTML, CSS, and JavaScript to create the site.
+This blog chronicles my initial steps into web development during the foundations phase of the Dev Academy Aotearoa bootcamp. It's where I experimented with the fundamentals of HTML, CSS, and JavaScript, documenting my early progress and challenges along the way.
 
-It's a simple blog with a clean design that allowed me to easily and clearly experiment with the basics of web development. I learned how to create and style HTML elements, how to use CSS to style the layout and design of the site, and how to use JavaScript to add interactivity and functionality to the site.
+#### What You'll Find:
 
-Currently, you can view the blog at [lewis-steentjes.github.io](https://lewis-steentjes.github.io)
+- **Building Blocks:** My experiences learning core web technologies, such as flexboxes, grids, tables, and forms.
+- **Simple Design:** A focus on functionality while I mastered the basics.
+- **Growth Mindset:** Documenting my progress and lessons learned
+
+Take a Look: Visit the live blog at [lewis-steentjes.github.io](https://lewis-steentjes.github.io) and follow my journey!

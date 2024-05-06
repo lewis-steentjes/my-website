@@ -6,18 +6,17 @@ tags: ["NextJS", "Tailwind", "GMaps API", "TradeMe API"]
 heroImage: "/images/housing-map-3.png"
 ---
 
-Based on my own past experiences at searching for rental properties online, I have decided to embark on a journey to improve the user experience for people searching through property listings online. By linking property listings with [Google Maps](https://mapsplatform.google.com/resources/blog/introducing-react-components-for-the-maps-javascript-api/), I aim to create a user experience where people can open a map and understand what the offers are at a glance. Check out the currently deployed version over [here](https://trademe-housing.vercel.app/).
+Inspired by the challenges of online property hunting, I'm building a tool to enhance the user experience. By integrating TradeMe listings with Google Maps, my aim is to let users scan a map and quickly grasp key details about available rentals. [Check out the progress so far.](https://trademe-housing.vercel.app/)
 
 ![Housing Map](/images/housing-map-homes-2.png)
 
-One of the more popular web apps for browsing for housing properties online is [Homes](https://homes.co.nz/).
-It has a search box on the left-hand side of the screen, and displays the search results on the map on the right. When using primarily as a traditional search box with a map view on the side, it works quite well. When used primarily as a map to browse listings, it becomes difficult to infer important details important details such as bedroom count, bathroom count, listing price and listing age without clicking on a link and going to another webpage.
+**The Problem:** Popular platforms like [Homes.co.nz](https://homes.co.nz/) offer map views, but it can be tedious to glean important information (price, bedrooms, listing age) without constantly clicking individual listings.
 
-To address this I am adding a few key UX features to my implementation:
+##### **My Solution:**
 
-- Colour-coded icons to signify listing age
-- Listing Price shown directly on the icon
-- Hover to see more details (bedrooms, bathrooms, etc.)
-- Icon changes after viewing (colour theme or transparency)
+- **Color-Coded Age:** Icons instantly convey how recent a listing is.
+- **Price at a Glance:** No more clicking just to see if it's in your budget.
+- **Informative Hover:** Essential details like bedrooms/bathrooms on mouseover.
+- **Visual History:** Icons change after viewing, reducing re-clicks.
 
-Combined, these features will allow for users to have an easier time browsing for properties by being able to simply navigate property listings online.
+**The Goal:** A streamlined property search where map exploration reveals the information you need. Stay tuned as I continue to refine this project!
