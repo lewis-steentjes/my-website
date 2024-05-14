@@ -16,7 +16,7 @@ Inspired by the challenges of online property hunting, I'm building a tool to en
 <br />
 </figure>
 
-**The Problem:** Popular platforms like [Homes.co.nz](https://homes.co.nz/) offer map views, but it can be tedious to glean important information (price, bedrooms, listing age) without tediously clicking through individual listings.
+**The Problem:** Popular platforms like [Homes.co.nz](https://homes.co.nz/) offer map views, but it can be tedious to glean important information (price, bedrooms, listing age) without having to tediously clicking through individual listings.
 
 ##### **My Solution:**
 
