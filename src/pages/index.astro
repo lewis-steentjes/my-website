@@ -21,7 +21,8 @@ const posts = (await getCollection("works")).sort(
     const postLinks = document.getElementById("postLinks");
     postLinks.addEventListener("click", (event) => {
         const currOpacity = window.getComputedStyle(event.target).getPropertyValue("opacity");
-        if (currOpacity != 0.9) {
+        if (currOpacity == 100) {
+            // This should never pass. It is a temporary setting to disable the feature.
             event.preventDefault();
             event.target.style.opacity = "0.9";
         }
