@@ -3,7 +3,7 @@ title: "My Hobby EE Projects: Powered by Hugo"
 description: "A blog created using Hugo, a static site generator. This blog was used to learn the basics of Hugo, and to document progress for various personal projects."
 pubDate: "Apri 22 2022"
 tags: ["MarkDown", "Hugo", "Git", "Arduino", "Raspberry Pi"]
-heroImage: "/images/hugo-blog/hero2.png"
+heroImage: "hugo-blog.png"
 ---
 
 This is my previous blog that I created using [Hugo](https://gohugo.io/) with the [Zzossig's theme](https://github.com/zzossig/hugo-theme-zzo). I used this blog to learn the basics of Hugo, and to document my progress on various personal projects. I learned a lot about Hugo, Git, and Markdown while working on this blog, which I have transferred toward building this current website.

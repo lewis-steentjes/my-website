@@ -9,6 +9,7 @@ import FormattedTags from "../components/FormattedTags.astro";
 import SocialLinks from "../components/SocialLinks.astro";
 import PostDescription from "../components/PostDescription.astro";
 import { Image } from "astro:assets";
+const images = import.meta.glob("../assets/images/heros/*");
 
 const posts = (await getCollection("works")).sort(
     (b, a) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
@@ -67,7 +68,7 @@ const posts = (await getCollection("works")).sort(
                                             decoding="async"
                                             loading="lazy"
                                             class="shadow-emphasis object-cover"
-                                            src={post.data.heroImage}
+                                            src={images[`../assets/images/heros/${post.data.heroImage}`]()}
                                             alt={`Preview image for ${post.data.title}`}
                                         />
                                     </div>

@@ -3,7 +3,7 @@ title: "The Beginning: Foundations Blog"
 description: "Follow my coding journey from the start! This blog documents my web development foundations, covering **HTML**, **CSS**, and **JavaScript** basics."
 pubDate: "February 10 2024"
 tags: ["GitHub Pages", "JavaScript", "CSS", "HTML"]
-heroImage: "/images/foundations-blog-3.png"
+heroImage: "foundations-blog.png"
 ---
 
 This blog chronicles my initial steps into web development during the foundations phase of the Dev Academy Aotearoa bootcamp. It's where I experimented with the fundamentals of HTML, CSS, and JavaScript, documenting my early progress and challenges along the way.

@@ -3,7 +3,7 @@ title: "TradeMe Housing Map"
 description: "A website that displays **TradeMe** property listings on a map, built using **NextJS**, **Google Maps** and **TradeMe's API**.            Development is still ongoing."
 pubDate: "May 03 2024"
 tags: ["NextJS", "Tailwind", "GMaps API", "TradeMe API"]
-heroImage: "/images/housing-map/hero4.png"
+heroImage: "housing-map.png"
 ---
 
 Inspired by the challenges of online property hunting, I'm building a tool to enhance the user experience. By integrating TradeMe listings with Google Maps, my aim is to let users scan a map and quickly grasp key details about available rentals.
