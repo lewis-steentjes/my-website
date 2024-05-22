@@ -12,7 +12,7 @@ Inspired by the challenges of online property hunting, I'm building a tool to en
 
 <figure>
 <br />
-<img src="/images/housing-map-homes-2.png" alt="Example screenshot of Homes.co.nz interface">
+<img src="/src/assets/images/housing-map/homes.png" alt="Example screenshot of Homes.co.nz interface">
 </img>
 <figcaption class="italic text-center text-lg">Example screenshot taken from Homes.co.nz</figcaption>
 <br />
