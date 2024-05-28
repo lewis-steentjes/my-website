@@ -8,7 +8,7 @@ heroImage: "housing-map.png"
 
 Inspired by the challenges of online property hunting, I'm building a tool to enhance the user experience. By integrating TradeMe listings with Google Maps, my aim is to let users scan a map and quickly grasp key details about available rentals.
 
-[Check out the progress so far.](https://trademe-housing.vercel.app/) **TMSandbox is currently down - properties are not being fetched**
+[Check out the progress so far.](https://super-housing.vercel.app/)
 
 <figure>
 <br />
@@ -29,4 +29,4 @@ Inspired by the challenges of online property hunting, I'm building a tool to en
 
 **The Goal:** A streamlined property search where map exploration reveals the information you need. Stay tuned as I continue to refine this project!
 
-[Check out the progress so far.](https://trademe-housing.vercel.app/) **TMSandbox is currently down - properties are not being fetched**
+[Check out the progress so far.](https://super-housing.vercel.app/)
